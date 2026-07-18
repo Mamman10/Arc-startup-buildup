@@ -14,6 +14,10 @@ npm start
 
 Then open `http://localhost:3000`.
 
+## Deploy to Vercel
+
+Vercel serves the site from `public/` and deploys `api/projects.js` as the project API. Import this repository with the project root set to the repository root; no framework preset or build command is required. Project history is session-only until a database is added, so it must not be treated as durable storage on Vercel.
+
 ## MVP scope
 
 - Submit a startup idea.
