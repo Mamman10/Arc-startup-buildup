@@ -1,0 +1,13 @@
+{
+  "name": "ai-startup-builder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A testnet-safe AI Startup Builder MVP for Arc.",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "test": "node --test backend/tests/**/*.test.js",
+    "check": "node --check backend/src/server.js && node --check backend/src/services/startup-analysis.js"
+  },
+  "engines": { "node": ">=20" }
+}

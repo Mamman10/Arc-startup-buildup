@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Launch Brief — AI Startup Builder</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header>
+        <p class="eyebrow">AI STARTUP BUILDER / MVP</p>
+        <h1>Turn a promising idea into a launch brief.</h1>
+        <p class="lede">Start with a crisp problem. Get a business hypothesis, validation plan, and the next build milestones.</p>
+      </header>
+      <section class="composer" aria-labelledby="idea-label">
+        <label id="idea-label" for="idea">What are you building?</label>
+        <textarea id="idea" minlength="12" maxlength="2000" placeholder="Example: An AI operations assistant for freelance design studios that turns client conversations into tasks, proposals, and invoices."></textarea>
+        <div class="form-footer"><span id="status" role="status"></span><button id="submit" type="button">Create launch brief <span>→</span></button></div>
+      </section>
+      <section id="result" class="result hidden" aria-live="polite"></section>
+      <section class="history" aria-labelledby="history-heading">
+        <div class="section-heading"><p class="eyebrow">SESSION WORKSPACE</p><h2 id="history-heading">Recent briefs</h2></div>
+        <div id="projects" class="project-list"><p class="empty">Your generated briefs will appear here.</p></div>
+      </section>
+    </main>
+    <script type="module" src="/app/main.js"></script>
+  </body>
+</html>
